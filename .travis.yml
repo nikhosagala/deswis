@@ -1,0 +1,19 @@
+language: scala
+jdk:
+- oraclejdk8
+scala:
+- 2.11.8
+before_script:
+- psql -c 'create database deswis;' -U postgres
+- psql -c "alter user postgres with password 'postgres';" -U postgres
+services:
+- postgresql
+notifications:
+  email: false
+deploy:
+  provider: heroku
+  api_key:
+    secure: ufdAbMRm1ma2XjSKYWsZXLRenpVbM5/IFs7157DBe1DLLm2UYGTboVJhRcddZREblcs6L0LdSk7W8LLGDOK4Ys4kJdLcT0perRi2s09Fx1AhMt1m+Zh7KKcpU7JjCVn2HDc2e/VwQWy5bAdZF9rO9KqI5jXkmNUirul+Mpq9R86C8LxibQketWbCxfQxID/zfxCS7goG7dODO+ffjV5AjRnn55gHyvb0aZhQA4ovYJxCbxngw5/Zak4vyxec1FPqj7jt1WIcDZVdAtijHSikMXZmZHKMpisen7bDFcyKeuusnCUGk/E+xANSo9Zi6j8OxN9fIJsuAIsVYDyZChngFAzrfGFim4WFqIQSl2s3HBS0yv969p/7QoVbbXl9qfVinOVjiJdF5BOpQEo0kZ/ant38Qr/phwZzLj3b8Hp1kGCYjtJapgrzqZUXyV50GX+h1gf+wIj8JxnWm0Gz4l5aXobYtzelJoiaRkr8p4MXukK+lRoWaG3pr2gMVD73vveOgviDhCg+NtSX/t8ym8IgCbWihWE1ClkhRAmmyfWkA/wpVJXpaokx7I8gCkfdcXl7ZvYE2ainbfUeBhBRcL9hXf2cn+uxU5EVih2d2KImLILhP2R2UB9Ow+rnpqmClyJlc6tyTcqH+r9Ju7Ej+3UZHths+Z1bLsN9UrzO988cC7c=
+  app: deswis
+  on:
+    repo: nikhosagala/deswis

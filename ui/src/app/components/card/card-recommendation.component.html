@@ -1,0 +1,13 @@
+<mz-card [backgroundClass]="'blue-grey lighten-3'">
+  <mz-card-title>
+    <md-checkbox (change)="onChange($event)"><a routerLink="/destination/{{destination.id}}" routerLinkActive="active"
+                                                title="{{destination.name}}"><span class="flow-text"> {{destination.name}}</span></a>
+    </md-checkbox>
+  </mz-card-title>
+  <mz-card-content>
+    <img md-card-image src="data:{{destination.googlePlace.contentType}};base64,{{destination.googlePlace.imageData}}"
+         *ngIf="destination.googlePlace.contentType && destination.googlePlace.imageData">
+    <img md-card-image src="../../../assets/images/abstract-image.jpg"
+         *ngIf="!destination.googlePlace.contentType || !destination.googlePlace.imageData">
+  </mz-card-content>
+</mz-card>

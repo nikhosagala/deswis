@@ -1,0 +1,27 @@
+<mz-card [backgroundClass]="'blue-grey lighten-4'">
+  <mz-card-title *ngIf="destinations">
+    {{title}}
+    <span class="right">
+      <mz-spinner
+        [color]="'blue'"
+        [size]="'small'" *ngIf="!destinations || loading">
+    </mz-spinner>
+    </span>
+  </mz-card-title>
+  <mz-card-content>
+    <div class="row">
+      <mz-card *ngIf="noData" [backgroundClass]="'blue-grey lighten-3'">
+        <mz-card-content>
+          <span class="flow-text">Maaf belum ada destinasi untuk kategori ini.</span>
+        </mz-card-content>
+      </mz-card>
+      <div class="col l6 m12 s12 " *ngFor="let destination of destinations; let i = index;">
+        <card [destination]="destination"></card>
+      </div>
+    </div>
+    <pagination *ngIf="displayPagination" [itemsPerPage]="itemsPerPage" [totalItems]="totalItems"
+                [(ngModel)]="currentPage"
+                (pageChanged)="pageChanged($event)" [maxSize]="4">
+    </pagination>
+  </mz-card-content>
+</mz-card>

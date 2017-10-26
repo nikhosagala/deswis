@@ -1,0 +1,41 @@
+<ng2-slim-loading-bar color="#2980b9"></ng2-slim-loading-bar>
+<header>
+  <mz-navbar [navbarClass]="'blue darken-3'">
+    <mz-navbar-item-container [align]="'left'">
+      <mz-navbar-item><a class="waves-effect white-text" routerLinkActive="active" routerLink="/dashboard">Beranda</a>
+      </mz-navbar-item>
+      <mz-navbar-item><a class="waves-effect white-text" routerLinkActive="active"
+                         routerLink="/destination">Destinasi</a></mz-navbar-item>
+    </mz-navbar-item-container>
+  </mz-navbar>
+
+  <md-menu #categoryMenu="mdMenu">
+    <a md-menu-item routerLinkActive="active" routerLink="/category/{{category.id}}"
+       *ngFor="let category of categories">{{category.name}}</a>
+  </md-menu>
+
+  <!--<mz-dropdown [dropdownButtonId]="'btn-dropdown'" [id]="'dropdown-nav'">-->
+    <!--<mz-dropdown-item><a routerLinkActive="active" routerLink="/dashboard">Beranda</a>-->
+    <!--</mz-dropdown-item>-->
+    <!--<mz-dropdown-item><a routerLinkActive="active"-->
+                         <!--routerLink="/destination">Destinasi</a></mz-dropdown-item>-->
+  <!--</mz-dropdown>-->
+
+  <button mz-button class="collapse-button hide-on-large-only" id="btn-dropdown"
+          [float]="true" [flat]="true">
+  </button>
+
+</header>
+<main>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</main>
+
+<footer class="page-footer blue darken-3">
+  <div class="footer-copyright">
+    <div class="container">
+      © 2017 Copyright Nikho Sagala
+    </div>
+  </div>
+</footer>

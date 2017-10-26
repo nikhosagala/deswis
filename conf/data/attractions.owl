@@ -1,0 +1,1608 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#"
+     xml:base="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:destinasi="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#hasID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#hasID">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#hasRating -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#hasRating">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Air_Terjun -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Air_Terjun">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Perairan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Asia -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Asia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kuliner_Internasional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Barat -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Barat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kuliner_Internasional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Belanja_dan_Kuliner -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Belanja_dan_Kuliner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Budaya"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Cagar_Budaya -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Cagar_Budaya">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Warisan_Budaya"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Camping -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Camping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Ekowisata"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Petualangan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Danau -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Danau">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Perairan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Destinasi_Wisata -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Destinasi_Wisata"/>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Edukatif -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Edukatif">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pendidikan_dan_Sejarah"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Ekowisata -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Ekowisata">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Alam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Fashion -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Fashion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Belanja_dan_Kuliner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Gua -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Gua">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Ekowisata"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Hiburan -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Hiburan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Buatan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Hiking -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Hiking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Olahraga"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kebun_Binatang -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kebun_Binatang">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Hiburan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kuliner_Internasional -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kuliner_Internasional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Belanja_dan_Kuliner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kuliner_Tradisional -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kuliner_Tradisional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Belanja_dan_Kuliner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#MICE -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#MICE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Buatan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Makasar -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Makasar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kuliner_Tradisional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Monumen -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Monumen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Warisan_Budaya"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pendidikan_dan_Sejarah"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum_Benda_Khusus -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum_Benda_Khusus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum_Budaya -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum_Budaya">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum_Sains -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum_Sains">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum_Sejarah -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum_Sejarah">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Olahraga -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Olahraga">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Buatan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Oleh-Oleh -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Oleh-Oleh">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Belanja_dan_Kuliner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Outbound -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Outbound">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Olahraga"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Padang -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Padang">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kuliner_Tradisional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Paralayang -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Paralayang">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Olahraga"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pegunungan -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pegunungan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Ekowisata"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pemandangan -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pemandangan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Petualangan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pemandian_Air_Panas -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pemandian_Air_Panas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Perairan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pendidikan_dan_Sejarah -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pendidikan_dan_Sejarah">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Buatan"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Budaya"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Perairan -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Perairan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Alam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Petualangan -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Petualangan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Alam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Rohani -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Rohani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Warisan_Budaya"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Shopping_Mall -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Shopping_Mall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Belanja_dan_Kuliner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Sunda -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Sunda">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kuliner_Tradisional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Taman_Bertema -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Taman_Bertema">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Hiburan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Taman_Wisata -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Taman_Wisata">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Hiburan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Warisan_Budaya -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Warisan_Budaya">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Budaya"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Waterpark -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Waterpark">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Hiburan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Alam -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Alam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Destinasi_Wisata"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Buatan -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Buatan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Destinasi_Wisata"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Budaya -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Budaya">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Destinasi_Wisata"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Kota_dan_Wisata_Desa -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Kota_dan_Wisata_Desa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Budaya"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Pedesaan -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Pedesaan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Kota_dan_Wisata_Desa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Perkotaan -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Perkotaan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Kota_dan_Wisata_Desa"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Air_Terjun_Maribaya -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Air_Terjun_Maribaya">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Air_Terjun"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pemandian_Air_Panas"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.79999995231628</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Alam_Wisata_Cimahi -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Alam_Wisata_Cimahi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Outbound"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Taman_Wisata"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.79999995231628</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Alun_Alun_Bandung -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Alun_Alun_Bandung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Perkotaan"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">91</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.40000009536743</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Babakan_Siliwangi -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Babakan_Siliwangi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Perkotaan"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.09999990463257</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Bandung_Treetop_Adventure_Park -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Bandung_Treetop_Adventure_Park">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Outbound"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">72</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.40000009536743</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Braga_City_Walk -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Braga_City_Walk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Perkotaan"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.09999990463257</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Cihampelas_Walk -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Cihampelas_Walk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Fashion"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Shopping_Mall"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.40000009536743</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Ciwidey_Valley_Resort -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Ciwidey_Valley_Resort">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pemandian_Air_Panas"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.90000009536743</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Curug_Cilengkrang -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Curug_Cilengkrang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Air_Terjun"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">52</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.90000009536743</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Curug_Cimahi -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Curug_Cimahi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Air_Terjun"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.19999980926514</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Curug_Cipanji -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Curug_Cipanji">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Air_Terjun"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.5</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Curug_Dago -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Curug_Dago">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Air_Terjun"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">83</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.09999990463257</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Curug_Tilu_Leuwi_Opat -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Curug_Tilu_Leuwi_Opat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pemandangan"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Sunda"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.09999990463257</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Dapur_Caringin_Tilu -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Dapur_Caringin_Tilu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kuliner_Tradisional"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pemandangan"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">82</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.19999980926514</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Desa_Wisata_Lebakmuncang -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Desa_Wisata_Lebakmuncang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Hiking"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Pedesaan"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">59</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.30000019073486</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Dusun_Bambu_Family_Leisure_Park -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Dusun_Bambu_Family_Leisure_Park">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Camping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pemandangan"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Farmhouse_Susu_Lembang -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Farmhouse_Susu_Lembang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kebun_Binatang"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Oleh-Oleh"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Taman_Wisata"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.09999990463257</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Festival_Citylink -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Festival_Citylink">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Shopping_Mall"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">74</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.30000019073486</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Floating_Market_Lembang -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Floating_Market_Lembang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kuliner_Tradisional"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Oleh-Oleh"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pemandangan"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.30000019073486</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Gantole_Cililin -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Gantole_Cililin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Hiking"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Paralayang"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pemandangan"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.30000019073486</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Gedung_Indonesia_Menggugat -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Gedung_Indonesia_Menggugat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Cagar_Budaya"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">94</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.30000019073486</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Gedung_Merdeka -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Gedung_Merdeka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Cagar_Budaya"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">92</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.59999990463257</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Gedung_Sate_Bandung -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Gedung_Sate_Bandung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Cagar_Budaya"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Monumen"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.40000009536743</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Gereja_Katedral_Santo_Petrus -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Gereja_Katedral_Santo_Petrus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Rohani"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">77</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.59999990463257</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Goa_Belanda_Bandung -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Goa_Belanda_Bandung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Gua"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Goa_Jepang_Bandung -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Goa_Jepang_Bandung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Gua"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">85</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.09999990463257</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Green_Hill_Park_TWA_Cimanggu -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Green_Hill_Park_TWA_Cimanggu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Camping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Outbound"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pemandian_Air_Panas"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">63</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.79999995231628</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Gua_Pawon -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Gua_Pawon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Gua"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">46</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.30000019073486</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Istana_Bandung_Electronic_Centre -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Istana_Bandung_Electronic_Centre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Shopping_Mall"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.40000009536743</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Jendela_Alam -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Jendela_Alam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Edukatif"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Outbound"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.09999990463257</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kampung_Boneka_Kain_Sukajadi -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kampung_Boneka_Kain_Sukajadi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Oleh-Oleh"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">87</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.70000004768372</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kampung_Buyut_Cipageran -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kampung_Buyut_Cipageran">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Camping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Taman_Wisata"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">47</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.40000009536743</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kampung_Gajah_Wonderland -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kampung_Gajah_Wonderland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Taman_Bertema"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.5</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kareumbi_Masigit -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kareumbi_Masigit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Camping"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.19999980926514</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kawah_Cibuni_Rengganis -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kawah_Cibuni_Rengganis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pemandian_Air_Panas"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.90000009536743</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kawah_Putih -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kawah_Putih">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pemandangan"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">61</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kebun_Binatang_Bandung -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kebun_Binatang_Bandung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kebun_Binatang"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.90000009536743</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kolam_Renang_Karang_Setra -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kolam_Renang_Karang_Setra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Waterpark"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kolam_Renang_Oniba_Center -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kolam_Renang_Oniba_Center">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Waterpark"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">49</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.79999995231628</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Maribaya_Natural_Hot_Spring_Resort -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Maribaya_Natural_Hot_Spring_Resort">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pemandangan"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pemandian_Air_Panas"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Masjid_Raya_Bandung -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Masjid_Raya_Bandung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Rohani"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">93</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.5</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Monumen_Bandung_Lautan_Api_BKR -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Monumen_Bandung_Lautan_Api_BKR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Monumen"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">78</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.09999990463257</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Monumen_Perjuangan_Rakyat_Jawa_Barat -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Monumen_Perjuangan_Rakyat_Jawa_Barat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Monumen"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.19999980926514</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum_Asia_Afrika -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum_Asia_Afrika">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Edukatif"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum_Sejarah"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.5</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum_Barli -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum_Barli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#MICE"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum_Benda_Khusus"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum_Geologi -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum_Geologi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Edukatif"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum_Sains"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.5</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum_Mandala_Wangsit_Siliwangi -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum_Mandala_Wangsit_Siliwangi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Edukatif"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum_Benda_Khusus"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.30000019073486</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum_Pos_Indonesia -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum_Pos_Indonesia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Edukatif"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum_Benda_Khusus"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.19999980926514</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum_Sri_Baduga -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum_Sri_Baduga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Edukatif"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum_Benda_Khusus"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.40000009536743</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Natural_Hill -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Natural_Hill">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Air_Terjun"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Camping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Hiking"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Outbound"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.19999980926514</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#NuArt_Sculpture_Park -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#NuArt_Sculpture_Park">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Edukatif"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Museum_Benda_Khusus"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Oleh-Oleh"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.59999990463257</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Observatorium_Bosscha -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Observatorium_Bosscha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Edukatif"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.40000009536743</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pandiga_Educreation_Sport -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pandiga_Educreation_Sport">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Outbound"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Paris_Van_Java -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Paris_Van_Java">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Fashion"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Shopping_Mall"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.40000009536743</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pasar_Baru_Trade_Center -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pasar_Baru_Trade_Center">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Fashion"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">95</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.09999990463257</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Paskal_Food_Market -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Paskal_Food_Market">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kuliner_Internasional"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Kuliner_Tradisional"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.19999980926514</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pemandian_Air_Panas_Cibolang -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pemandian_Air_Panas_Cibolang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pemandian_Air_Panas"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.29999995231628</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Perkebunan_Teh_Rancabali -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Perkebunan_Teh_Rancabali">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Oleh-Oleh"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pemandangan"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">66</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.40000009536743</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Plaza_Taman_Rakyat_Pemkot_Cimahi -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Plaza_Taman_Rakyat_Pemkot_Cimahi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Perkotaan"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.90000009536743</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Puncak_Bintang_Bukit_Moko -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Puncak_Bintang_Bukit_Moko">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Camping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Hiking"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pemandangan"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.30000019073486</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Punclut -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Punclut">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pemandangan"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">86</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.19999980926514</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pura_Agung_Wira_Loka_Natha -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pura_Agung_Wira_Loka_Natha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Rohani"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">81</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.59999990463257</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pusat_Penelitian_Teh_dan_Kina_Gambung -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pusat_Penelitian_Teh_dan_Kina_Gambung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Hiking"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.40000009536743</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Rafting_Bandung_Gravity_Adventure -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Rafting_Bandung_Gravity_Adventure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Outbound"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">57</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.5</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Ranca_Upas_Smart_Camp_Adventure -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Ranca_Upas_Smart_Camp_Adventure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Camping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Outbound"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pemandian_Air_Panas"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">62</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.19999980926514</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Rumah_Mode_Factory_Outlet -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Rumah_Mode_Factory_Outlet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Fashion"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.19999980926514</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Rumah_Sosis_Lembang -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Rumah_Sosis_Lembang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Barat"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Outbound"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">73</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.79999995231628</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Sanghyang_Tikoro -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Sanghyang_Tikoro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Gua"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.30000019073486</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Saung_Angklung_Ujo -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Saung_Angklung_Ujo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Cagar_Budaya"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Edukatif"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#MICE"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Oleh-Oleh"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.59999990463257</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Sentra_Jeans_Cihampelas -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Sentra_Jeans_Cihampelas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Fashion"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">88</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.90000009536743</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Sentra_Kain_Cigondewah -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Sentra_Kain_Cigondewah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Fashion"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">89</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.70000004768372</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Seorae_Setiabudi_Bandung -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Seorae_Setiabudi_Bandung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Asia"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.30000019073486</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Sepatu_Cibaduyut_Bandung -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Sepatu_Cibaduyut_Bandung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Fashion"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.30000019073486</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Situs_Bumi_Alit_Kabuyutan -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Situs_Bumi_Alit_Kabuyutan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Cagar_Budaya"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">51</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.19999980926514</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Sop_Konro_Marannu -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Sop_Konro_Marannu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Makasar"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.40000009536743</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Stone_Garden_Geopark_Citatah -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Stone_Garden_Geopark_Citatah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pegunungan"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pemandangan"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.19999980926514</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Tamada_Outbound -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Tamada_Outbound">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Outbound"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.09999990463257</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Taman_Begonia_Lembang -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Taman_Begonia_Lembang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Taman_Wisata"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.09999990463257</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Taman_Bunga_Cihideung_Lembang -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Taman_Bunga_Cihideung_Lembang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Taman_Wisata"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.19999980926514</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Taman_Film_Pasupati -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Taman_Film_Pasupati">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Perkotaan"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.09999990463257</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Taman_Hutan_Raya_Ir.H.Juanda -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Taman_Hutan_Raya_Ir.H.Juanda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Air_Terjun"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Gua"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pemandangan"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.30000019073486</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Taman_Lalu_Lintas_Ade_Irma_Suryani -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Taman_Lalu_Lintas_Ade_Irma_Suryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Edukatif"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Taman_Musik_Centrum -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Taman_Musik_Centrum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Perkotaan"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.19999980926514</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Tangkuban_Perahu -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Tangkuban_Perahu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pemandangan"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.5</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Tebing_Keraton -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Tebing_Keraton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pemandangan"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.19999980926514</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#The_Valley_Bistro -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#The_Valley_Bistro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Barat"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Pemandangan"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.30000019073486</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Trans_Studio_Bandung -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Trans_Studio_Bandung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Taman_Bertema"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.40000009536743</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Trans_Studio_Mall -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Trans_Studio_Mall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Fashion"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Shopping_Mall"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.40000009536743</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Vihara_Satya_Budhi -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Vihara_Satya_Budhi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Rohani"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.90000009536743</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Warung_Nasi_Ibu_Imas -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Warung_Nasi_Ibu_Imas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Sunda"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">71</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.30000019073486</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Zodra_Outbound_Adventure -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Zodra_Outbound_Adventure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Outbound"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.80000019073486</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Curug_Cinulang_(Sindulang) -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Curug_Cinulang_(Sindulang)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Air_Terjun"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#De&apos;Ranch_Lembang -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#De&apos;Ranch_Lembang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Asia"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Barat"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Oleh-Oleh"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Outbound"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.09999990463257</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Taman_Cempaka_(Foto) -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Taman_Cempaka_(Foto)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Perkotaan"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.30000019073486</hasRating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Kuda_&amp;_Warung_Liwet_Pakuhaji -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Wisata_Kuda_&amp;_Warung_Liwet_Pakuhaji">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Outbound"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Sunda"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nikhosagala/ontologies/2017/4/destinasi#Taman_Wisata"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</hasID>
+        <hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.79999995231628</hasRating>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+

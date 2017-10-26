@@ -1,0 +1,52 @@
+<mz-card [backgroundClass]="'grey lighten-4'">
+  <mz-card-content>Silahkan tentukan prioritas Anda. Terdapat 3 pilihan yang digunakan untuk merangking hasil
+    rekomendasi destinasi wisata Anda. <b>Harap tidak memberi nilai yang sama untuk ketiga pilihan tersebut.</b>
+    <div class="col s12 m6">
+      Nama Anda:
+      <mz-input-container [inline]="true">
+        <input mz-input
+               id="name-input"
+               placeholder="Nama"
+               type="text" [(ngModel)]="_setting.name">
+      </mz-input-container>
+    </div>
+    <div class="row">
+      <div class="col l4 s12 m12">
+        <mz-collection>
+          <mz-collection-header><span class="flow-text">Durasi ke Destinasi</span>
+          </mz-collection-header>
+          <mz-collection-item>
+            <md-slider mz-tooltip
+                       [tooltip]="'Durasi perjalanan ke destinasi wisata menjadi prioritas Anda dalam perangkingan jika nilai ini lebih dari pilihan yang lain.'"
+                       thumbLabel [value]="_setting.durationWeight"
+                       (input)="onInput0($event)" [step]="5"></md-slider>
+          </mz-collection-item>
+        </mz-collection>
+      </div>
+      <div class="col l4 s12 m12">
+        <mz-collection>
+          <mz-collection-header><span class="flow-text">Kecocokan Kategori</span>
+          </mz-collection-header>
+          <mz-collection-item>
+            <md-slider mz-tooltip
+                       [tooltip]="'Kecocokan kategori menjadi prioritas Anda dalam perangkingan jika nilai ini lebih dari pilihan yang lain.'"
+                       thumbLabel [value]="_setting.interestWeight"
+                       (input)="onInput1($event)" [step]="5"></md-slider>
+          </mz-collection-item>
+        </mz-collection>
+      </div>
+      <div class="col l4 s12 m12">
+        <mz-collection>
+          <mz-collection-header><span class="flow-text">Popularitas Destinasi</span>
+          </mz-collection-header>
+          <mz-collection-item>
+            <md-slider mz-tooltip
+                       [tooltip]="'Popularitas dari destinasi wisata menjadi prioritas Anda dalam perangkingan jika nilai ini lebih dari pilihan yang lain.'"
+                       thumbLabel [value]="_setting.ratingWeight"
+                       (input)="onInput2($event)" [step]="5"></md-slider>
+          </mz-collection-item>
+        </mz-collection>
+      </div>
+    </div>
+  </mz-card-content>
+</mz-card>

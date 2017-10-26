@@ -1,0 +1,86 @@
+<mz-card [backgroundClass]="'blue-grey lighten-4'" *ngIf="destination">
+  <mz-card-title>{{destination.name}} <span class="right"><rating [(ngModel)]="destination.rating" [max]="5"
+                                                                  [readonly]="true"></rating></span></mz-card-title>
+  <mz-card-content>
+    <div class="row">
+      <div class="col l6 s12 m12">
+        <mz-collapsible [mode]="'expandable'">
+          <mz-collapsible-item>
+            <mz-collapsible-item-header><span class="flow-text">Details</span></mz-collapsible-item-header>
+            <mz-collapsible-item-body>
+              <mz-card>
+                <mz-card-title>Detail</mz-card-title>
+                <mz-card-content>
+                  <p>Alamat : {{destination.address}}</p>
+                  <p *ngIf="destination.phone">Telepon : {{destination.phone}}</p>
+                  <p *ngIf="rating">Rating :
+                    <rating [(ngModel)]="destination.rating+destination.rating" [max]="10" [readonly]="true"></rating>
+                  </p>
+                  <p *ngIf="destination.lengthOfVisit > 0 ">Lama kunjungan : {{destination.lengthOfVisit}} Jam</p>
+                </mz-card-content>
+              </mz-card>
+              <mz-card>
+                <mz-card-title>Jam Buka</mz-card-title>
+                <mz-card-content>
+                  <table class="_Y0c">
+                    <tbody>
+                    <tr>
+                      <td>{{destination.monday}}</td>
+                    </tr>
+                    <tr>
+                      <td>{{destination.tuesday}}</td>
+                    </tr>
+                    <tr>
+                      <td>{{destination.wednesday}}</td>
+                    </tr>
+                    <tr>
+                      <td>{{destination.thursday}}</td>
+                    </tr>
+                    <tr>
+                      <td>{{destination.friday}}</td>
+                    </tr>
+                    <tr>
+                      <td>{{destination.saturday}}</td>
+                    </tr>
+                    <tr>
+                      <td>{{destination.sunday}}</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </mz-card-content>
+              </mz-card>
+            </mz-collapsible-item-body>
+          </mz-collapsible-item>
+        </mz-collapsible>
+      </div>
+      <div class="col l6 s12 m12">
+        <mz-collapsible [mode]="'expandable'">
+          <mz-collapsible-item>
+            <mz-collapsible-item-header><span class="flow-text">Image</span></mz-collapsible-item-header>
+            <mz-collapsible-item-body>
+              <img md-card-image src="data:{{googlePlace.contentType}};base64,{{googlePlace.imageData}}"
+                   *ngIf="googlePlace.contentType && googlePlace.imageData">
+              <img md-card-image src="../../../assets/images/abstract-image.jpg"
+                   *ngIf="!googlePlace.contentType || !googlePlace.imageData">
+            </mz-collapsible-item-body>
+          </mz-collapsible-item>
+        </mz-collapsible>
+      </div>
+    </div>
+  </mz-card-content>
+  <mz-card-action>
+    <button mz-button class="blue darken-3" *ngIf="destination" md-raised-button color="primary"
+            (click)="showMaps(true)">Show Maps
+    </button>
+    <button mz-button class="blue darken-3" *ngIf="destination" md-raised-button color="primary"
+            (click)="showMaps(false)">Hide Maps
+    </button>
+  </mz-card-action>
+</mz-card>
+<mz-card *ngIf="showMap" [backgroundClass]="'blue-grey lighten-4'">
+  <mz-card-content>
+    <agm-map [zoom]="14" [latitude]="googlePlace.lat" [longitude]="googlePlace.lng">
+      <agm-marker [latitude]="googlePlace.lat" [longitude]="googlePlace.lng"></agm-marker>
+    </agm-map>
+  </mz-card-content>
+</mz-card>

@@ -1,0 +1,27 @@
+<mz-card [backgroundClass]="'blue-grey lighten-3'">
+  <mz-card-content>
+    <mz-collapsible [mode]="'expandable'">
+      <mz-collapsible-item>
+        <mz-collapsible-item-header>
+          <a routerLink="/destination/{{destination.id}}" routerLinkActive="active" title="{{destination.name}}"><span
+            class="flow-text">{{destination.name}}</span></a>
+        </mz-collapsible-item-header>
+        <mz-collapsible-item-body *ngIf="destination.description">{{destination.description}}</mz-collapsible-item-body>
+        <mz-collapsible-item-body *ngIf="!destination.description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea
+            commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.</p>
+        </mz-collapsible-item-body>
+      </mz-collapsible-item>
+    </mz-collapsible>
+  </mz-card-content>
+</mz-card>

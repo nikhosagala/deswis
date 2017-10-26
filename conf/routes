@@ -1,0 +1,61 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET            /                                          controllers.Assets.at(path="/public", file="ui/index.html")
+OPTIONS        /*all                                      controllers.ApplicationController.preflight(all)
+
+# API Docs
+GET            /api-docs                                  controllers.ApiHelpController.getResources
+GET            /api-docs/api/Application                  controllers.ApiHelpController.getResource(path = "/api/Application")
+GET            /api-docs/api/Category                     controllers.ApiHelpController.getResource(path = "/api/Category")
+GET            /api-docs/api/Destination                  controllers.ApiHelpController.getResource(path = "/api/Destination")
+GET            /api-docs/api/GoogleMaps                   controllers.ApiHelpController.getResource(path = "/api/GoogleMaps")
+GET            /api-docs/api/GooglePlace                  controllers.ApiHelpController.getResource(path = "/api/GooglePlace")
+GET            /api-docs/api/Recommendation               controllers.ApiHelpController.getResource(path = "/api/Recommendation")
+
+# Application
+GET            /createOWL/:model                          controllers.ApplicationController.createOWL(model:Int)
+GET            /geolocation                               controllers.ApplicationController.geolocation()
+GET            /latestUpdate                              controllers.ApplicationController.latestUpdate()
+POST           /upload                                    controllers.ApplicationController.upload()
+
+# Category v2 API
+GET            /api/categories.json                       controllers.CategoryController.gets(filter:String ?= "", sort:String ?= "", offset:Int ?= 1, limit:Int ?= 0)
+GET            /api/category/:id                          controllers.CategoryController.get(id: Int)
+GET            /api/category/child/node                   controllers.CategoryController.getChildren(node:String ?="Destinasi Wisata")
+POST           /api/category/submit                       controllers.CategoryController.submit()
+PUT            /api/category/update                       controllers.CategoryController.update()
+DELETE         /api/category/:id                          controllers.CategoryController.delete(id: Int)
+
+# Destination v2 API
+GET            /api/destinations.json                     controllers.DestinationController.gets(filter:String ?= "", sort:String ?= "", offset:Int ?= 1, limit:Int ?= 0)
+GET            /api/destination/:id                       controllers.DestinationController.get(id: Int)
+GET            /api/destination/category/:id              controllers.DestinationController.getByCategory(id: Int, filter:String ?= "", sort:String ?= "", offset:Int ?= 1, limit:Int ?= 0)
+POST           /api/destination/submit                    controllers.DestinationController.submit()
+PUT            /api/destination/update                    controllers.DestinationController.update()
+DELETE         /api/destination/:id                       controllers.DestinationController.delete(id: Int)
+
+# Google Place v2 API
+GET            /api/google_places.json                    controllers.GooglePlaceController.gets(filter:String ?= "", sort:String ?= "", offset:Int ?= 1, limit:Int ?= 0)
+GET            /api/google_place/:id                      controllers.GooglePlaceController.get(id: Int)
+POST           /api/google_place/submit                   controllers.GooglePlaceController.submit()
+PUT            /api/google_place/update                   controllers.GooglePlaceController.update()
+DELETE         /api/google_place/:id                      controllers.GooglePlaceController.delete(id: Int)
+
+# Recommendation v2 API
+GET            /api/recommendation/:id                    controllers.RecommendationController.get(id: Int)
+GET            /api/recommendation/destination/:id        controllers.RecommendationController.getDestinations(id: Int, filter:String ?= "", sort:String ?= "", offset:Int ?= 1, limit:Int ?= 0)
+POST           /api/recommendation/submit                 controllers.RecommendationController.submit(save:Int ?= 0)
+POST           /api/recommendation/latest                 controllers.RecommendationController.latest()
+PUT            /api/recommendation/update                 controllers.RecommendationController.update()
+DELETE         /api/recommendation/:id                    controllers.RecommendationController.delete(id: Int)
+
+# Survey
+GET            /api/survey/:id                            controllers.RecommendationController.getSurvey(id: Int)
+POST           /api/survey/submit                         controllers.RecommendationController.submitSurvey()
+PUT            /api/survey/update                         controllers.RecommendationController.updateSurvey()
+
+# Map static resources from the /public folder to the /assets URL path
+GET            /*file                                     controllers.Assets.at(path="/public/ui", file)

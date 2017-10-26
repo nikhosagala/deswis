@@ -1,0 +1,29 @@
+<mz-card [backgroundClass]="'blue-grey lighten-4'">
+  <mz-card-content>
+    <mz-card>
+      <mz-card-title>Silahkan Pilih Kategori Yang Anda Inginkan</mz-card-title>
+      <mz-card-content>
+        <div class="row">
+          <div class="col l6 s12 m12" *ngFor="let detail of recommendationDetail">
+            <deswis-slider [recommendationDetail]="detail" [disable]="loading"></deswis-slider>
+          </div>
+        </div>
+        <pagination *ngIf="displayPagination" [itemsPerPage]="itemsPerPage" [totalItems]="totalItems"
+                    [(ngModel)]="currentPage"
+                    (pageChanged)="pageChanged($event)" [maxSize]="4">
+        </pagination>
+        <setting (showSetting)="onSaveSetting($event)" *ngIf="showSetting" [_setting]="_setting"></setting>
+      </mz-card-content>
+      <mz-card-action>
+        <button mz-button class="blue darken-3" (click)="onSaved()">Rekomendasikan</button>
+        <button mz-button class="blue darken-3" (click)="reset()">Reset</button>
+        <span class="right">
+      <mz-spinner
+        [color]="'blue'"
+        [size]="'small'" *ngIf="!recommendationDetail || loading">
+    </mz-spinner>
+    </span>
+      </mz-card-action>
+    </mz-card>
+  </mz-card-content>
+</mz-card>

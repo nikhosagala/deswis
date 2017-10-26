@@ -1,0 +1,1488 @@
+<mz-card>
+  <mz-card-title>
+    Survey Pengguna
+  </mz-card-title>
+  <mz-card-content>
+    <form [formGroup]="surveyForm" (ngSubmit)="onSubmit()" novalidate>
+      <div class="section">
+        <div class="row">
+          <mz-input-container class="col s12 m6">
+            <input mz-input mz-validation required
+                   id="input-name"
+                   formControlName="name"
+                   [errorMessageResource]="errorMessageResources.name"
+                   name="name"
+                   type="text"
+                   [label]="'Nama'"/>
+          </mz-input-container>
+          <mz-input-container class="col s12 m6">
+            <input mz-input mz-validation required
+                   id="input-age"
+                   formControlName="age"
+                   [errorMessageResource]="errorMessageResources.age"
+                   type="number"
+                   [label]="'Usia'"/>
+          </mz-input-container>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <h6 class="col s12">Apakah Anda familiar dengan destinasi wisata di Bandung ?</h6>
+        </div>
+        <div class="row">
+          <mz-radio-button-container class="col s8 m2">
+            <input mz-radio-button
+                   id="radio-button-1"
+                   formControlName="familiar"
+                   name="familiar"
+                   type="radio"
+                   value="1"
+                   [label]="'Sangat Tidak Familiar'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s8 m2">
+            <input mz-radio-button
+                   id="radio-button-2"
+                   formControlName="familiar"
+                   name="familiar"
+                   type="radio"
+                   value="2"
+                   [label]="'Tidak Familiar'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s8 m2">
+            <input mz-radio-button
+                   id="radio-button-3"
+                   formControlName="familiar"
+                   name="familiar"
+                   type="radio"
+                   value="3"
+                   [label]="'Familiar'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s8 m2">
+            <input mz-radio-button
+                   id="radio-button-4"
+                   formControlName="familiar"
+                   name="familiar"
+                   type="radio"
+                   value="4"
+                   [label]="'Cukup Familiar'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s8 m2">
+            <input mz-radio-button
+                   id="radio-button-5"
+                   formControlName="familiar"
+                   name="familiar"
+                   type="radio"
+                   value="5"
+                   [label]="'Sangat Familiar'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <h6 class="col s12">Interaksi pada sistem rekomendasi ini meningkatkan kualitas pencarian destinasi wisata
+            ?</h6>
+        </div>
+        <div class="row">
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pu1-1"
+                   formControlName="pu1"
+                   name="pu1"
+                   type="radio"
+                   value="1"
+                   [label]="'Sangat Tidak Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pu1-2"
+                   formControlName="pu1"
+                   name="pu1"
+                   type="radio"
+                   value="2"
+                   [label]="'Tidak Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pu1-3"
+                   formControlName="pu1"
+                   name="pu1"
+                   type="radio"
+                   value="3"
+                   [label]="'Netral'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pu1-4"
+                   formControlName="pu1"
+                   name="pu1"
+                   type="radio"
+                   value="4"
+                   [label]="'Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s8 m2">
+            <input mz-radio-button
+                   id="radio-button-pu1-5"
+                   formControlName="pu1"
+                   name="pu1"
+                   type="radio"
+                   value="5"
+                   [label]="'Sangat Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <h6 class="col s12">Interaksi pada sistem rekomendasi ini memberikan banyak manfaat dibandingkan dengan fitur
+            pencarian destinasi lainnya?</h6>
+        </div>
+        <div class="row">
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pu2-1"
+                   formControlName="pu2"
+                   name="pu2"
+                   type="radio"
+                   value="1"
+                   [label]="'Sangat Tidak Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pu2-2"
+                   formControlName="pu2"
+                   name="pu2"
+                   type="radio"
+                   value="2"
+                   [label]="'Tidak Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pu2-3"
+                   formControlName="pu2"
+                   name="pu2"
+                   type="radio"
+                   value="3"
+                   [label]="'Netral'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pu2-4"
+                   formControlName="pu2"
+                   name="pu2"
+                   type="radio"
+                   value="4"
+                   [label]="'Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s8 m2">
+            <input mz-radio-button
+                   id="radio-button-pu2-5"
+                   formControlName="pu2"
+                   name="pu2"
+                   type="radio"
+                   value="5"
+                   [label]="'Sangat Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <h6 class="col s12">Interaksi pada sistem rekomendasi ini mempersingkat waktu pencarian destinasi wisata?</h6>
+        </div>
+        <div class="row">
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pu3-1"
+                   formControlName="pu3"
+                   name="pu3"
+                   type="radio"
+                   value="1"
+                   [label]="'Sangat Tidak Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pu3-2"
+                   formControlName="pu3"
+                   name="pu3"
+                   type="radio"
+                   value="2"
+                   [label]="'Tidak Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pu3-3"
+                   formControlName="pu3"
+                   name="pu3"
+                   type="radio"
+                   value="3"
+                   [label]="'Netral'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pu3-4"
+                   formControlName="pu3"
+                   name="pu3"
+                   type="radio"
+                   value="4"
+                   [label]="'Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s8 m2">
+            <input mz-radio-button
+                   id="radio-button-pu3-5"
+                   formControlName="pu3"
+                   name="pu3"
+                   type="radio"
+                   value="5"
+                   [label]="'Sangat Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <h6 class="col s12">Interaksi pada sistem rekomendasi ini memudahkan pencarian destinasi wisata yang sesuai
+            dengan kebutuhan?</h6>
+        </div>
+        <div class="row">
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pu4-1"
+                   formControlName="pu4"
+                   name="pu4"
+                   type="radio"
+                   value="1"
+                   [label]="'Sangat Tidak Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pu4-2"
+                   formControlName="pu4"
+                   name="pu4"
+                   type="radio"
+                   value="2"
+                   [label]="'Tidak Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pu4-3"
+                   formControlName="pu4"
+                   name="pu4"
+                   type="radio"
+                   value="3"
+                   [label]="'Netral'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pu4-4"
+                   formControlName="pu4"
+                   name="pu4"
+                   type="radio"
+                   value="4"
+                   [label]="'Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s8 m2">
+            <input mz-radio-button
+                   id="radio-button-pu4-5"
+                   formControlName="pu4"
+                   name="pu4"
+                   type="radio"
+                   value="5"
+                   [label]="'Sangat Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <h6 class="col s12">Interaksi pada sistem rekomendasi ini mampu memberikan hasil pencarian destinasi wisata
+            yang lebih baik?</h6>
+        </div>
+        <div class="row">
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pu5-1"
+                   formControlName="pu5"
+                   name="pu5"
+                   type="radio"
+                   value="1"
+                   [label]="'Sangat Tidak Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pu5-2"
+                   formControlName="pu5"
+                   name="pu5"
+                   type="radio"
+                   value="2"
+                   [label]="'Tidak Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pu5-3"
+                   formControlName="pu5"
+                   name="pu5"
+                   type="radio"
+                   value="3"
+                   [label]="'Netral'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pu5-4"
+                   formControlName="pu5"
+                   name="pu5"
+                   type="radio"
+                   value="4"
+                   [label]="'Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s8 m2">
+            <input mz-radio-button
+                   id="radio-button-pu5-5"
+                   formControlName="pu5"
+                   name="pu5"
+                   type="radio"
+                   value="5"
+                   [label]="'Sangat Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <h6 class="col s12">Interaksi pada sistem rekomendasi ini cukup membantu dalam proses menemukan destinasi
+            wisata?</h6>
+        </div>
+        <div class="row">
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pu6-1"
+                   formControlName="pu6"
+                   name="pu6"
+                   type="radio"
+                   value="1"
+                   [label]="'Sangat Tidak Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pu6-2"
+                   formControlName="pu6"
+                   name="pu6"
+                   type="radio"
+                   value="2"
+                   [label]="'Tidak Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pu6-3"
+                   formControlName="pu6"
+                   name="pu6"
+                   type="radio"
+                   value="3"
+                   [label]="'Netral'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pu6-4"
+                   formControlName="pu6"
+                   name="pu6"
+                   type="radio"
+                   value="4"
+                   [label]="'Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s8 m2">
+            <input mz-radio-button
+                   id="radio-button-pu6-5"
+                   formControlName="pu6"
+                   name="pu6"
+                   type="radio"
+                   value="5"
+                   [label]="'Sangat Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <h6 class="col s12">Secara umum, model sistem rekomendasi ini sangat bermaanfaat dalam pencarian destinasi
+            wisata?</h6>
+        </div>
+        <div class="row">
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pu7-1"
+                   formControlName="pu7"
+                   name="pu7"
+                   type="radio"
+                   value="1"
+                   [label]="'Sangat Tidak Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pu7-2"
+                   formControlName="pu7"
+                   name="pu7"
+                   type="radio"
+                   value="2"
+                   [label]="'Tidak Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pu7-3"
+                   formControlName="pu7"
+                   name="pu7"
+                   type="radio"
+                   value="3"
+                   [label]="'Netral'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pu7-4"
+                   formControlName="pu7"
+                   name="pu7"
+                   type="radio"
+                   value="4"
+                   [label]="'Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s8 m2">
+            <input mz-radio-button
+                   id="radio-button-pu7-5"
+                   formControlName="pu7"
+                   name="pu7"
+                   type="radio"
+                   value="5"
+                   [label]="'Sangat Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <h6 class="col s12">Interaksi pada sistem rekomendasi ini mudah digunakan?</h6>
+        </div>
+        <div class="row">
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-eou1-1"
+                   formControlName="eou1"
+                   name="eou1"
+                   type="radio"
+                   value="1"
+                   [label]="'Sangat Tidak Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-eou1-2"
+                   formControlName="eou1"
+                   name="eou1"
+                   type="radio"
+                   value="2"
+                   [label]="'Tidak Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-eou1-3"
+                   formControlName="eou1"
+                   name="eou1"
+                   type="radio"
+                   value="3"
+                   [label]="'Netral'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-eou1-4"
+                   formControlName="eou1"
+                   name="eou1"
+                   type="radio"
+                   value="4"
+                   [label]="'Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-eou1-5"
+                   formControlName="eou1"
+                   name="eou1"
+                   type="radio"
+                   value="5"
+                   [label]="'Sangat Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <h6 class="col s12">Interaksi pada sistem rekomendasi ini dijalankan tanpa memerlukan banyak usaha?</h6>
+        </div>
+        <div class="row">
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-eou2-1"
+                   formControlName="eou2"
+                   name="eou2"
+                   type="radio"
+                   value="1"
+                   [label]="'Sangat Tidak Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-eou2-2"
+                   formControlName="eou2"
+                   name="eou2"
+                   type="radio"
+                   value="2"
+                   [label]="'Tidak Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-eou2-3"
+                   formControlName="eou2"
+                   name="eou2"
+                   type="radio"
+                   value="3"
+                   [label]="'Netral'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-eou2-4"
+                   formControlName="eou2"
+                   name="eou2"
+                   type="radio"
+                   value="4"
+                   [label]="'Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-eou2-5"
+                   formControlName="eou2"
+                   name="eou2"
+                   type="radio"
+                   value="5"
+                   [label]="'Sangat Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <h6 class="col s12">Interaksi pada sistem rekomendasi mudah bila digunakan oleh orang lain?</h6>
+        </div>
+        <div class="row">
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-eou3-1"
+                   formControlName="eou3"
+                   name="eou3"
+                   type="radio"
+                   value="1"
+                   [label]="'Sangat Tidak Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-eou3-2"
+                   formControlName="eou3"
+                   name="eou3"
+                   type="radio"
+                   value="2"
+                   [label]="'Tidak Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-eou3-3"
+                   formControlName="eou3"
+                   name="eou3"
+                   type="radio"
+                   value="3"
+                   [label]="'Netral'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-eou3-4"
+                   formControlName="eou3"
+                   name="eou3"
+                   type="radio"
+                   value="4"
+                   [label]="'Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-eou3-5"
+                   formControlName="eou3"
+                   name="eou3"
+                   type="radio"
+                   value="5"
+                   [label]="'Sangat Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <h6 class="col s12">Langkah-langkah pada sistem rekomendasi ini jelas dan mudah dimengerti?</h6>
+        </div>
+        <div class="row">
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-eou4-1"
+                   formControlName="eou4"
+                   name="eou4"
+                   type="radio"
+                   value="1"
+                   [label]="'Sangat Tidak Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-eou4-2"
+                   formControlName="eou4"
+                   name="eou4"
+                   type="radio"
+                   value="2"
+                   [label]="'Tidak Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-eou4-3"
+                   formControlName="eou4"
+                   name="eou4"
+                   type="radio"
+                   value="3"
+                   [label]="'Netral'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-eou4-4"
+                   formControlName="eou4"
+                   name="eou4"
+                   type="radio"
+                   value="4"
+                   [label]="'Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-eou4-5"
+                   formControlName="eou4"
+                   name="eou4"
+                   type="radio"
+                   value="5"
+                   [label]="'Sangat Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <h6 class="col s12">Mudah bagi saya untuk menguasai sistem dengan interaksi seperti ini</h6>
+        </div>
+        <div class="row">
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-eou5-1"
+                   formControlName="eou5"
+                   name="eou5"
+                   type="radio"
+                   value="1"
+                   [label]="'Sangat Tidak Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-eou5-2"
+                   formControlName="eou5"
+                   name="eou5"
+                   type="radio"
+                   value="2"
+                   [label]="'Tidak Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-eou5-3"
+                   formControlName="eou5"
+                   name="eou5"
+                   type="radio"
+                   value="3"
+                   [label]="'Netral'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-eou5-4"
+                   formControlName="eou5"
+                   name="eou5"
+                   type="radio"
+                   value="4"
+                   [label]="'Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-eou5-5"
+                   formControlName="eou5"
+                   name="eou5"
+                   type="radio"
+                   value="5"
+                   [label]="'Sangat Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <h6 class="col s12">Saya yakin dengan destinasi wisata yang direkomendasikan oleh sistem ini?</h6>
+        </div>
+        <div class="row">
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-tr1-1"
+                   formControlName="tr1"
+                   name="tr1"
+                   type="radio"
+                   value="1"
+                   [label]="'Sangat Tidak Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-tr1-2"
+                   formControlName="tr1"
+                   name="tr1"
+                   type="radio"
+                   value="2"
+                   [label]="'Tidak Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-tr1-3"
+                   formControlName="tr1"
+                   name="tr1"
+                   type="radio"
+                   value="3"
+                   [label]="'Netral'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-tr1-4"
+                   formControlName="tr1"
+                   name="tr1"
+                   type="radio"
+                   value="4"
+                   [label]="'Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-tr1-5"
+                   formControlName="tr1"
+                   name="tr1"
+                   type="radio"
+                   value="5"
+                   [label]="'Sangat Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <h6 class="col s12">Saya yakin dengan alasan dari sistem rekomendasi ini mengenai setiap destinasi wisata yang
+            direkomendasikan?</h6>
+        </div>
+        <div class="row">
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-tr2-1"
+                   formControlName="tr2"
+                   name="tr2"
+                   type="radio"
+                   value="1"
+                   [label]="'Sangat Tidak Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-tr2-2"
+                   formControlName="tr2"
+                   name="tr2"
+                   type="radio"
+                   value="2"
+                   [label]="'Tidak Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-tr2-3"
+                   formControlName="tr2"
+                   name="tr2"
+                   type="radio"
+                   value="3"
+                   [label]="'Netral'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-tr2-4"
+                   formControlName="tr2"
+                   name="tr2"
+                   type="radio"
+                   value="4"
+                   [label]="'Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-tr2-5"
+                   formControlName="tr2"
+                   name="tr2"
+                   type="radio"
+                   value="5"
+                   [label]="'Sangat Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <h6 class="col s12">Saya yakin bahwa seluruh destinasi wisata yang direkomendasikan sesuai dengan kebutuhan
+            saya?</h6>
+        </div>
+        <div class="row">
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-tr3-1"
+                   formControlName="tr3"
+                   name="tr3"
+                   type="radio"
+                   value="1"
+                   [label]="'Sangat Tidak Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-tr3-2"
+                   formControlName="tr3"
+                   name="tr3"
+                   type="radio"
+                   value="2"
+                   [label]="'Tidak Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-tr3-3"
+                   formControlName="tr3"
+                   name="tr3"
+                   type="radio"
+                   value="3"
+                   [label]="'Netral'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-tr3-4"
+                   formControlName="tr3"
+                   name="tr3"
+                   type="radio"
+                   value="4"
+                   [label]="'Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-tr3-5"
+                   formControlName="tr3"
+                   name="tr3"
+                   type="radio"
+                   value="5"
+                   [label]="'Sangat Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <h6 class="col s12">Penjelasan dan keterangan yang diberikan oleh sistem rekomendasi ini membuat saya yakin
+            bahwa hasil rekomendasi sesuai dengan kebutuhan saya?</h6>
+        </div>
+        <div class="row">
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-tr4-1"
+                   formControlName="tr4"
+                   name="tr4"
+                   type="radio"
+                   value="1"
+                   [label]="'Sangat Tidak Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-tr4-2"
+                   formControlName="tr4"
+                   name="tr4"
+                   type="radio"
+                   value="2"
+                   [label]="'Tidak Setuju'"
+                   [withGap]="true">
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-tr4-3"
+                   formControlName="tr4"
+                   name="tr4"
+                   type="radio"
+                   value="3"
+                   [label]="'Netral'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-tr4-4"
+                   formControlName="tr4"
+                   name="tr4"
+                   type="radio"
+                   value="4"
+                   [label]="'Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-tr4-5"
+                   formControlName="tr4"
+                   name="tr4"
+                   type="radio"
+                   value="5"
+                   [label]="'Sangat Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <h6 class="col s12">Interaksi pada sistem rekomendasi ini cukup menarik?</h6>
+        </div>
+        <div class="row">
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pe1-1"
+                   formControlName="pe1"
+                   name="pe1"
+                   type="radio"
+                   value="1"
+                   [label]="'Sangat Tidak Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pe1-2"
+                   formControlName="pe1"
+                   name="pe1"
+                   type="radio"
+                   value="2"
+                   [label]="'Tidak Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pe1-3"
+                   formControlName="pe1"
+                   name="pe1"
+                   type="radio"
+                   value="3"
+                   [label]="'Netral'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pe1-4"
+                   formControlName="pe1"
+                   name="pe1"
+                   type="radio"
+                   value="4"
+                   [label]="'Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pe1-5"
+                   formControlName="pe1"
+                   name="pe1"
+                   type="radio"
+                   value="5"
+                   [label]="'Sangat Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <h6 class="col s12">Saya merasa senang dengan interaksi dalam sistem rekomendasi ini?</h6>
+        </div>
+        <div class="row">
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pe2-1"
+                   formControlName="pe2"
+                   name="pe2"
+                   type="radio"
+                   value="1"
+                   [label]="'Sangat Tidak Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pe2-2"
+                   formControlName="pe2"
+                   name="pe2"
+                   type="radio"
+                   value="2"
+                   [label]="'Tidak Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pe2-3"
+                   formControlName="pe2"
+                   name="pe2"
+                   type="radio"
+                   value="3"
+                   [label]="'Netral'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pe2-4"
+                   formControlName="pe2"
+                   name="pe2"
+                   type="radio"
+                   value="4"
+                   [label]="'Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pe2-5"
+                   formControlName="pe2"
+                   name="pe2"
+                   type="radio"
+                   value="5"
+                   [label]="'Sangat Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <h6 class="col s12">Proses interaksi dalam sistem rekomendasi ini cukup memuaskan?</h6>
+        </div>
+        <div class="row">
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pe3-1"
+                   formControlName="pe3"
+                   name="pe3"
+                   type="radio"
+                   value="1"
+                   [label]="'Sangat Tidak Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pe3-2"
+                   formControlName="pe3"
+                   name="pe3"
+                   type="radio"
+                   value="2"
+                   [label]="'Tidak Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pe3-3"
+                   formControlName="pe3"
+                   name="pe3"
+                   type="radio"
+                   value="3"
+                   [label]="'Netral'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pe3-4"
+                   formControlName="pe3"
+                   name="pe3"
+                   type="radio"
+                   value="4"
+                   [label]="'Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pe3-5"
+                   formControlName="pe3"
+                   name="pe3"
+                   type="radio"
+                   value="5"
+                   [label]="'Sangat Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <h6 class="col s12">Saya cukup dituntun dalam menemukan destinasi wisata dalam sistem rekomendasi ini?</h6>
+        </div>
+        <div class="row">
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pe4-1"
+                   formControlName="pe4"
+                   name="pe4"
+                   type="radio"
+                   value="1"
+                   [label]="'Sangat Tidak Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pe4-2"
+                   formControlName="pe4"
+                   name="pe4"
+                   type="radio"
+                   value="2"
+                   [label]="'Tidak Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pe4-3"
+                   formControlName="pe4"
+                   name="pe4"
+                   type="radio"
+                   value="3"
+                   [label]="'Netral'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pe4-4"
+                   formControlName="pe4"
+                   name="pe4"
+                   type="radio"
+                   value="4"
+                   [label]="'Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-pe4-5"
+                   formControlName="pe4"
+                   name="pe4"
+                   type="radio"
+                   value="5"
+                   [label]="'Sangat Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <h6 class="col s12">Jika saya ingin menggunakan sistem rekomendasi wisata pada waktu yang akan datang , saya
+            memilih menggunakan sistem rekomendasi wisata ini?</h6>
+        </div>
+        <div class="row">
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-bi1-1"
+                   formControlName="bi1"
+                   name="bi1"
+                   type="radio"
+                   value="1"
+                   [label]="'Sangat Tidak Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-bi1-2"
+                   formControlName="bi1"
+                   name="bi1"
+                   type="radio"
+                   value="2"
+                   [label]="'Tidak Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-bi1-3"
+                   formControlName="bi1"
+                   name="bi1"
+                   type="radio"
+                   value="3"
+                   [label]="'Netral'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-bi1-4"
+                   formControlName="bi1"
+                   name="bi1"
+                   type="radio"
+                   value="4"
+                   [label]="'Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-bi1-5"
+                   formControlName="bi1"
+                   name="bi1"
+                   type="radio"
+                   value="5"
+                   [label]="'Sangat Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <h6 class="col s12">Saya akan menggunakan sistem rekomendasi ini pada waktu yang akan datang?</h6>
+        </div>
+        <div class="row">
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-bi2-1"
+                   formControlName="bi2"
+                   name="bi2"
+                   type="radio"
+                   value="1"
+                   [label]="'Sangat Tidak Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-bi2-2"
+                   formControlName="bi2"
+                   name="bi2"
+                   type="radio"
+                   value="2"
+                   [label]="'Tidak Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-bi2-3"
+                   formControlName="bi2"
+                   name="bi2"
+                   type="radio"
+                   value="3"
+                   [label]="'Netral'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-bi2-4"
+                   formControlName="bi2"
+                   name="bi2"
+                   type="radio"
+                   value="4"
+                   [label]="'Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-bi2-5"
+                   formControlName="bi2"
+                   name="bi2"
+                   type="radio"
+                   value="5"
+                   [label]="'Sangat Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <h6 class="col s12">Saya merekomendasikan sistem rekomendasi wisata ini untuk orang lain?</h6>
+        </div>
+        <div class="row">
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-bi3-1"
+                   formControlName="bi3"
+                   name="bi3"
+                   type="radio"
+                   value="1"
+                   [label]="'Sangat Tidak Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-bi3-2"
+                   formControlName="bi3"
+                   name="bi3"
+                   type="radio"
+                   value="2"
+                   [label]="'Tidak Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-bi3-3"
+                   formControlName="bi3"
+                   name="bi3"
+                   type="radio"
+                   value="3"
+                   [label]="'Netral'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-bi3-4"
+                   formControlName="bi3"
+                   name="bi3"
+                   type="radio"
+                   value="4"
+                   [label]="'Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+          <mz-radio-button-container class="col s12 m2">
+            <input mz-radio-button
+                   id="radio-button-bi3-5"
+                   formControlName="bi3"
+                   name="bi3"
+                   type="radio"
+                   value="5"
+                   [label]="'Sangat Setuju'"
+                   [withGap]="true"
+            >
+          </mz-radio-button-container>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <mz-input-container class="col s10">
+            <input mz-input
+                   id="input-comment"
+                   formControlName="comment"
+                   type="text"
+                   [label]="'Komentar atau Masukan Anda'"/>
+          </mz-input-container>
+        </div>
+      </div>
+    </form>
+  </mz-card-content>
+  <mz-card-action>
+    <!--<button mz-button [flat]="true" mz-modal-close>Keluar</button>-->
+    <button mz-button [flat]="true" (click)="onSubmit()" [disabled]="!surveyForm.valid">Simpan</button>
+  </mz-card-action>
+</mz-card>

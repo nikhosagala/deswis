@@ -1,0 +1,17 @@
+<mz-card *ngIf="recommendationDetail" mz-tooltip
+         [tooltip]="recommendationDetail.category.hint" [position]="'top'">
+  <mz-card-title><span class="flow-text">{{recommendationDetail.category.name}} <span class="right"> {{recommendationDetail.interestValue}}%</span></span>
+  </mz-card-title>
+  <mz-card-content>
+    <md-slider thumbLabel [value]="recommendationDetail.interestValue" [disabled]="disable"
+               (input)="onInput($event)" [step]="5"></md-slider>
+  </mz-card-content>
+  <mz-card-action>
+    <button mz-button class="blue lighten-5" float="true"><i mz-icon [icon]="'arrow_back'"
+                                                             (click)="onInputButton(0)"></i>
+    </button>
+    <span class="right"><button mz-button class="blue lighten-5" float="true"><i mz-icon [icon]="'arrow_forward'"
+                                                                                 (click)="onInputButton(1)"></i>
+    </button></span>
+  </mz-card-action>
+</mz-card>

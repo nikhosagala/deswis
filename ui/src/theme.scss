@@ -1,0 +1,11 @@
+@import '~@angular/material/theming';
+@import '~sweetalert2/dist/sweetalert2.css';
+@import "~materialize-css/dist/css/materialize.css";
+@import "~mdi/css/materialdesignicons.css";
+
+@include mat-core();
+$primary: mat-palette($mat-light-blue, 500);
+$accent: mat-palette($mat-grey, 400);
+$warn: mat-palette($mat-amber, 600);
+$theme: mat-light-theme($primary, $accent, $warn);
+@include angular-material-theme($theme);

@@ -1,0 +1,13 @@
+desktop.ini
+logs
+project/project
+target
+/.idea
+/*.iml
+/.settings
+/public/ui
+bin
+docs
+app/assets/
+test/resources/
+libexec

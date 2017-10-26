@@ -1,0 +1,501 @@
+@media only screen and (max-width: 1024px) {
+  .carousel-caption h1, .carousel-caption h1 strong, .carousel-caption h1 span, .carousel-caption h1 span strong {
+    font-size: 30px;
+  }
+
+  .btn-red.large {
+    font-size: 14px;
+  }
+
+  .nav li.main-nav a {
+    font-size: 16px;
+  }
+
+  .carousel-caption {
+    transform: translate(0, 35%);
+  }
+
+  .abo .display-pic img {
+    min-height: 500px;
+  }
+
+  .fea-item, .news-item {
+    min-height: 260px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .fea-item, .news-item {
+    min-height: 150px;
+    height: 100%;
+    width: 50%;
+    float: left;
+    margin-bottom: 40px;
+  }
+
+  nav .container {
+    margin: 0;
+  }
+
+  #nav {
+    display: none;
+  }
+
+  #mobile-nav {
+    display: block;
+    /*background-color: rgba(57, 82, 89);*/
+    /*position: fixed;*/
+  }
+
+  .navbar-brand > img {
+    display: block;
+    width: 75%;
+    margin-top: 5px;
+  }
+
+  .carousel-inner .item {
+    min-height: 490px;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel-caption h1, .carousel-caption h1 strong, .carousel-caption h1 span, .carousel-caption h1 span strong {
+    font-size: 18px;
+  }
+
+  .btn-red.large {
+    font-size: 12px;
+  }
+
+  .carousel-caption {
+    transform: translate(0, 15%);
+  }
+
+  .carousel-inner .item {
+    min-height: 250px;
+    height: 100%;
+  }
+
+  .carousel-inner .item {
+    max-height: 490px;
+    height: 100%;
+  }
+
+  .btn-red.large {
+    padding: 10px;
+  }
+
+  .fea h2, .news h2 {
+    margin-bottom: 40px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .fea, .news {
+    padding: 5px 15px;
+  }
+
+  .fea-item h3 {
+    font-size: 14px;
+  }
+
+  .fea-item h3 i {
+    font-size: 22px;
+    margin-top: 2px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    color: #dd3333;
+  }
+
+  .title {
+    margin: 0 50px 40px;
+  }
+
+  .fea-item, .news-item {
+    max-height: 314px;
+    margin-bottom: 50px;
+  }
+}
+
+/*MOBILE - BEFORE LOGIN*/
+
+.carousel.slide .carousel-inner > .item > img,
+.abo .display-pic img {
+  width: 100%;
+  height: 100%;
+  min-height: 490px;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
+@media (min-width: 1025px) and (max-width: 1110px) {
+  .nav > li > a {
+    padding-left: 5px;
+    padding-right: 5px
+  }
+}
+
+@media (max-width: 1024px) {
+  .reg-pemodal h4,
+  .reg-peminjam h4 {
+    height: 75px;
+    line-height: normal;
+  }
+
+  .form-group.form-item {
+    position: relative;
+  }
+
+  .header-bg-pemodal {
+    background-position: right top;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    overflow-x: hidden
+  }
+
+  .open-reg a {
+    margin: 10px auto 10px;
+    width: 90%;
+  }
+
+  footer-fe .btn-fr {
+    margin: 25px auto;
+    display: block;
+    width: 90%;
+  }
+
+  .reg-pemodal h4,
+  .reg-peminjam h4 {
+    height: auto;
+  }
+
+  .reg-pemodal,
+  .reg-peminjam {
+    margin-bottom: 30px;
+  }
+
+  .form-group.form-item {
+    float: none;
+    width: 100%
+  }
+
+  .login {
+    height: auto;
+    min-height: 100vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .collapse.navbar-collapse .navbar-right {
+    padding: 0 15px;
+  }
+
+  .collapse.navbar-collapse .navbar-right li {
+    margin: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .collapse.navbar-collapse .navbar-right li a {
+    background: #e10c18;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    text-align: center;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    cursor: pointer;
+    display: block;
+    text-transform: uppercase;
+    padding: 5px 0;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+}
+
+@media (max-width: 600px) {
+  .fea-item, .news-item {
+    max-height: 1000px;
+    width: 100%
+  }
+
+  .textual-inner {
+    height: auto;
+  }
+
+  .contact .contact-info li {
+    line-height: normal;
+  }
+
+  .header-bg-daftar .header-title {
+    transform: translate(0%, 100%);
+  }
+
+  .form-group.form-item,
+  .login-options {
+    width: 100%
+  }
+}
+
+/*MOBILE - AFTER LOGIN*/
+
+.sidenav .closebtn {
+  display: none;
+}
+
+.portlet.box > .portlet-body {
+  background-color: #fff;
+  padding: 10px;
+  min-height: 160px;
+}
+
+@media (max-width: 800px) {
+  body {
+    min-height: 100vh
+  }
+
+  .page-content .col-lg-4.col-md-4.col-sm-6.col-xs-12.margin-bottom-10,
+  .page-content .col-md-8.col-sm-12 {
+    width: 100%;
+    float: none;
+  }
+
+  .page-header .page-header-menu .hor-menu .navbar-nav > li {
+    width: 100%;
+  }
+
+  .page-content {
+    padding-top: 20px;
+  }
+
+  .page-header .page-header-menu {
+    background: rgba(0, 0, 0, 0.95) !important;
+  }
+
+  .page-header .page-header-menu.sidenav .hor-menu .navbar-nav {
+    background: transparent !important;
+  }
+
+  .page-header .page-header-menu.sidenav .hor-menu .navbar-nav > li > a,
+  .page-header .page-header-menu.sidenav .hor-menu .navbar-nav > li > a > i {
+    color: #fff !important
+  }
+
+  .page-header .page-header-menu.sidenav .hor-menu .navbar-nav > li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .page-header .page-header-menu .hor-menu {
+    margin-top: 50px !important
+  }
+
+  /* The side navigation menu */
+  .sidenav {
+    height: 100% !important; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    display: block !important;
+    padding-top: 0 !important
+  }
+
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover, .offcanvas a:focus {
+    color: #f1f1f1;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    padding: 0;
+    z-index: 10;
+    display: block;
+  }
+
+  .sidenav .container {
+    padding: 0;
+  }
+
+  .profile-sidebar {
+    width: 100% !important
+  }
+
+  .fileinput.fileinput-new + .clearfix .label.label-danger + span {
+    display: block;
+    margin-top: 5px;
+  }
+}
+
+@media (width: 768px) {
+  .page-container,
+  .page-content {
+    min-height: 834px
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .timeline {
+    margin-left: 0 !important;
+  }
+
+  .timeline > li .timeline-icon {
+    float: none !important;
+    margin: 0 0 20px 10px !important
+  }
+
+  .timeline-content .scroller,
+  .timeline-content .slimScrollDiv {
+    height: auto !important
+  }
+
+  .timeline-content .slimScrollBar,
+  .timeline-content .slimScrollRail {
+    display: none !important;
+  }
+
+  .timeline-content .scroller {
+    padding-right: 0 !important
+  }
+
+  .timeline-content p {
+    color: #ffffff
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sweet-alert {
+    top: 50px;
+    width: 90%;
+    right: auto;
+    margin: 0 auto !important;
+    position: absolute;
+    left: 5% !important;
+  }
+
+  .portlet.light > .portlet-title > .caption {
+    text-align: center;
+  }
+
+  .portlet.light > .portlet-title > .caption,
+  .portlet.light > .portlet-title > .tools,
+  .portlet.light > .portlet-title > .tools .btn-group,
+  .portlet.light > .portlet-title > .tools .btn-group button {
+    width: 100%
+  }
+
+  .table-toolbar .btn-group,
+  .table-toolbar .btn-group a {
+    width: 100%
+  }
+
+  .page-head .page-title,
+  .page-head .saldo-account {
+    text-align: center;
+    width: 100%;
+    float: none;
+  }
+
+  .tabbable-custom > .nav-tabs > li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .table-toolbar .btn-group {
+    margin-bottom: 10px;
+  }
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .portlet.light > .portlet-title > .nav-tabs > li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .btn.default.btn-file {
+    margin-bottom: 10px;
+  }
+
+  .form-actions a.btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #tab-report_3 .portlet-body.form .col-md-6 {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .number-stats .stat-right .stat-number {
+    float: right;
+    text-align: left;
+    width: calc(100% - 80px);
+  }
+
+  .number-stats > div:last-child {
+    padding: 0;
+  }
+
+  .number-stats .stat-right {
+    width: 100%
+  }
+
+  .number-stats .stat-number .number {
+    font-size: 25px;
+  }
+
+  .btn.default.btn-file {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .btn-group.btn-group.btn-group-justified {
+    display: block;
+    width: 100%;
+    margin: 3px 0 !important
+  }
+}

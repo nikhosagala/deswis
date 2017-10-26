@@ -1,0 +1,43 @@
+@import "../../variables";
+
+header {
+  #{'/deep/'} {
+    .side-nav {
+      padding-bottom: 0;
+      height: 100%;
+    }
+
+    .sidenav-background,
+    .collapse-button {
+      background: #204d74 !important;
+    }
+
+    .collapse-button {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      z-index: 24;
+    }
+  }
+}
+
+main {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  flex: 1 0 auto;
+
+  @media #{$large-and-up} {
+    padding-left: 100px;
+  }
+
+  .container {
+    width: 90% !important;
+    display: flex;
+    min-height: 90vh;
+    flex-direction: column;
+
+    @media #{$large-and-up} {
+      margin: 0 3%;
+    }
+  }
+}

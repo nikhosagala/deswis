@@ -1,0 +1,38 @@
+<mz-modal [fixedFooter]="true">
+  <mz-modal-header>
+    Kuesioner Aplikasi
+  </mz-modal-header>
+  <mz-modal-content>
+    <mz-collection>
+      <mz-collection-header><span class="flow-text">Jarak<span class="right">{{_setting.distanceWeight}}</span></span>
+      </mz-collection-header>
+      <mz-collection-item>
+        <md-slider thumbLabel [value]="_setting.distanceWeight" (input)="onInput0($event)"></md-slider>
+      </mz-collection-item>
+    </mz-collection>
+    <mz-collection>
+      <mz-collection-header><span class="flow-text">Kecocokan Kategori<span
+        class="right">{{_setting.interestWeight}}</span></span>
+      </mz-collection-header>
+      <mz-collection-item>
+        <md-slider thumbLabel [value]="_setting.interestWeight" (input)="onInput1($event)"></md-slider>
+      </mz-collection-item>
+    </mz-collection>
+    <mz-collection>
+      <mz-collection-header><span class="flow-text">Rating<span class="right">{{_setting.ratingWeight}}</span></span>
+      </mz-collection-header>
+      <mz-collection-item>
+        <md-slider thumbLabel [value]="_setting.ratingWeight" (input)="onInput2($event)"></md-slider>
+      </mz-collection-item>
+    </mz-collection>
+    <mz-card>
+      <mz-card-content>Pengaturan digunakan untuk menentukan kepentingan atribut jarak, kecocokan kategori, dan rating
+        pada rekomendasi Anda.
+      </mz-card-content>
+    </mz-card>
+  </mz-modal-content>
+  <mz-modal-footer>
+    <button mz-button [flat]="true" mz-modal-close>Keluar</button>
+    <button mz-button [flat]="true" (click)="onSaved()" mz-modal-close>Simpan</button>
+  </mz-modal-footer>
+</mz-modal>
